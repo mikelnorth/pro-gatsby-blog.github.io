@@ -3,11 +3,10 @@ module.exports = {
     title: 'Level Up Blog',
     keywords: ['blog','site']
   },
-  pathPrefix: "/pro-gatsby-blog",
   plugins: [
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
-      {
+    {
         resolve: `gatsby-source-filesystem`,
         options: {
           name: `images`,
@@ -24,12 +23,12 @@ module.exports = {
       {
         resolve: `gatsby-transformer-remark`,
       },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: 'gatsby-starter-default',
+      'gatsby-transformer-sharp',
+      'gatsby-plugin-sharp',
+      {
+        resolve: `gatsby-plugin-manifest`,
+        options: {
+          name: 'gatsby-starter-default',
         short_name: 'starter',
         start_url: '/',
         background_color: '#663399',
@@ -43,3 +42,5 @@ module.exports = {
     // 'gatsby-plugin-offline',
   ],
 }
+
+// pathPrefix: "/pro-gatsby-blog",
